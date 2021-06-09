@@ -1,6 +1,8 @@
 :root{
   --white: #FFFFFF;
   --white-darker: #F1F1F1;
+  --black: #000000;
+  --black-lighter: #333333;
   --blue-lighter: #BED4FF;
   --blue: #0066FF;
   --blue-darker: #005CE6;
@@ -13,10 +15,8 @@
   --gray-darker: #646369;
   
   /* controle das medidas rem */
-  font-size: 80%;
+  /* font-size: 80%; */
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Source+Sans+Pro:wght@600&display=swap');
 /* Pra chamar as fontes:
 font-family: 'Inter', sans-serif;
 font-family: 'Source Sans Pro', sans-serif; */
@@ -47,9 +47,34 @@ ul {
 }
 
 .btn {
-    padding: 0.8rem 0.8rem;
-    width: 8rem;
-    border-radius: 5px;
-    border: 1px solid;
-    font: 700 1rem;
+    min-width: 8rem;
+    margin: 1rem;
+    border-radius: 0.375rem;
+    padding: 1rem;
+    
+    font: 600 1rem 'Inter', sans-serif;
+
+    transition: 0.3s;  
+}
+
+.btn-confirm {
+    background: var(--blue);
+    color: var(--white);
+    border:  2px solid var(--blue);
+}
+
+.btn-confirm:hover {
+    background: var(--blue-darker);
+    border:  2px solid var(--blue-darker)
+}
+
+.btn-cancel {
+    background: var(--white);
+    color: var(--black-lighter);
+    border:  2px solid var(--gray-lighter);
+}
+
+.btn-cancel:hover {
+    background: var(--gray-lighter);
+    border:  2px solid var(--gray-lighter) 
 }

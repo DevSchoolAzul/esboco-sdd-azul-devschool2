@@ -1,9 +1,28 @@
 :root{
-  --white: #FFF; /* Exemplo de variavel de cor */
-  font-size: 80%; /* controle das medidas rem */
+  --white: #FFFFFF;
+  --white-darker: #F1F1F1;
+  --blue-lighter: #BED4FF;
+  --blue: #0066FF;
+  --blue-darker: #005CE6;
+  --orange: #FF9900;
+  --orange-darker: #E68A00;
+  --red: #D6210D;
+  --red-darker: #C52A19;
+  --gray-lighter: #E3E3E3;
+  --gray: #7D7C83;
+  --gray-darker: #646369;
+
+  --inter: 'Inter', sans-serif;
+  --source: 'Source Sans Pro', sans-serif;
+  
+  /* controle das medidas rem */
+  font-size: 80%;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Source+Sans+Pro:wght@600&display=swap');
+/* Pra chamar as fontes:
+font-family: var(--inter);
+font-family: var(--source) */
 
 * {
     margin: 0;

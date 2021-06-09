@@ -48,3 +48,11 @@ a {
 ul {
     list-style: none;
 }
+
+.btn {
+    padding: 0.8rem 0.8rem;
+    width: 8rem;
+    border-radius: 5px;
+    border: 1px solid;
+    font: 700 1rem;
+}

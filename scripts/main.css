@@ -1,0 +1,11 @@
+:root{
+  --white: #FFF; /* Exemplo de variavel de cor */
+  font-size: 80%; /* controle das medidas rem */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+

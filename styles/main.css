@@ -8,8 +8,8 @@
   --blue-darker: #005CE6;
   --orange: #FF9900;
   --orange-darker: #E68A00;
-  --red: #D6210D;
-  --red-darker: #C52A19;
+  --red: #C52A19;
+  --red-darker: #B12516;
   --gray-lighter: #E3E3E3;
   --gray: #7D7C83;
   --gray-darker: #646369;
@@ -80,6 +80,28 @@ ul {
 .btn-cancel:hover {
     background: var(--gray-lighter);
     border:  2px solid var(--gray-lighter) 
+}
+
+/* Botão de fechamento */
+/* <button class="btn-close"><span class="lnr lnr-cross"></span></button>*/
+.btn-close {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 4px;
+    border: 0;
+
+    background: var(--white-darker);
+
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--red);
+    
+    transition: 0.3s;
+}
+
+.btn-close:hover {
+    background: var(--red-darker);
+    color: var(--white);
 }
 
 /* classe dos modais */

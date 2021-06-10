@@ -57,6 +57,22 @@ ul {
     list-style: none;
 }
 
+/* Classe dos botões */
+
+/* div de alinhar botões */
+/*
+<div class="btn-group">
+    <button class="btn btn-cancel">cancel</button>
+    <button class="btn btn-confirm">confirma</button>
+</div>
+*/
+
+.btn-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* classe padrão dos botões */
 .btn {
     min-width: 8rem;
@@ -147,7 +163,7 @@ simbolo de arquivo com +:
     border:  2px solid var(--blue-darker);
 }
 
-/* Classes do Header*/
+/* Classes do Header */
 
 /* Exemplo de Header não autenticado
 <header class="header-box">
@@ -166,11 +182,13 @@ simbolo de arquivo com +:
         <strong>Fulano de Tal</strong>
         <a href="index.html"><span class="lnr lnr-exit"></span></a>
       </div>
-    </header>
+</header>
  */
 
  /* classe do header */
 .header-box {
+    position: sticky;
+    z-index: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -214,9 +232,66 @@ simbolo de arquivo com +:
     background: var(--white-darker);
 }
 
+/* Classe dos inputs e labels */
+/*
+<for class="form">
+        <div class="form-group">
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" placeholder="example@gmail.com">
+        </div>
+        <div class="form-group">
+            <label for="senha">Senha: </label>
+            <input type="password" name="senha" id="senha" placeholder="********">
+        </div>
+        <div class="btn-group">
+            <button type="submit" class="btn btn-confirm">Entrar</button>
+        </div>
+    </form>
+*/
 
-/* classe dos modais */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.8rem;
+}
 
+.form-group label {
+    font: 700 0.875rem 'Inter', sans-serif;
+    margin-bottom: 0.8rem;
+}
+
+.form-group input {
+    width: 20rem;
+    height: 2rem;
+
+    border: 3px solid transparent;
+    border-radius: 0.375rem;
+
+    padding-left: 0.8rem;
+    font: 400 0.875rem 'Inter', sans-serif;
+
+    background: var(--gray-light);
+    color: var(--black-lighter);
+
+    transition: 0.1s;
+}
+
+
+.form-group input:focus {
+    border: 2px solid var(--blue);
+}
+
+
+input::placeholder {
+    color: var(--gray);
+    opacity: 1;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+/* Classe dos modais */
 /* <div class="overlay">
    <div class="modal-box">
      Conteudo

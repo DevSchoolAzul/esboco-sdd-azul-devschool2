@@ -30,8 +30,15 @@ font-family: 'Source Sans Pro', sans-serif; */
 
 body {
     -webkit-font-smoothing: antialiased;
+    background: var(--white);
+    background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(241,241,241,1) 100%);
+    
     /* Exemplo de uso de variavel de cor */
     /* backgroud: var(--white) */
+}
+
+body, button, input {
+    font-family: 'Inter', sans-serif;
 }
 
 button {
@@ -104,13 +111,82 @@ ul {
     color: var(--white);
 }
 
+/* Classes do Header*/
+
+/* Exemplo de Header não autenticado
+<header class="header-box">
+    <div class="logo-box">
+        <img src="public/mobicare-akross-logo.svg">
+    </div>
+</header>
+*/
+
+/* Exemplo de Header autenticado
+<header class="header-box">
+      <div class="logo-box">
+        <img src="public/mobicare-akross-logo.svg">
+      </div>
+      <div class="profile-box">
+        <strong>Fulano de Tal</strong>
+        <a href="index.html"><span class="lnr lnr-exit"></span></a>
+      </div>
+    </header>
+ */
+
+ /* classe do header */
+.header-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 80px;
+    background: var(--white);
+    box-shadow: 0px 3px 5px 0px rgba(223,225,230,0.75);
+
+    padding: 0 10rem;
+}
+/* Classe da div do logo do header */
+.header-box .logo-box img {
+    width: 16rem;
+}
+
+/* Classe da div da profile do header */
+.header-box .profile-box {
+    display: flex;
+    align-items: center;
+}
+
+.header-box .profile-box a {
+    margin-left: 2rem;
+}
+
+.header-box .profile-box span{
+    border-radius: 4px;
+    width: 2rem;
+    height: 2rem;
+    padding: 0.375rem;
+    text-align: center;
+
+    font-size: 1.5rem;
+    color: var(--gray);
+
+    transition: 0.3s;
+}
+
+.header-box .profile-box span:hover {
+    color: var(--black);
+    background: var(--white-darker);
+}
+
+
 /* classe dos modais */
 
-/* <div class="overlay"> */
-/*   <div class="modal-box"> */
-/*     Conteudo */
-/*   </div> */
-/* </div> */
+/* <div class="overlay">
+   <div class="modal-box">
+     Conteudo
+     </div>
+   </div> 
+*/
 
 .overlay {
   position: fixed;

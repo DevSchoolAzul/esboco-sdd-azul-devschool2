@@ -111,6 +111,20 @@ ul {
     color: var(--white);
 }
 
+/* Botão de cadastro */
+/*
+simbolo de arquivo com +:
+<button class="btn btn-create"><span class="lnr lnr-file-add"></span> Cadastro</button>
+*/
+.btn-create {
+    background: var(--blue);
+    color: var(--white);
+}
+
+.btn-create:hover {
+    background: var(--blue-darker);
+}
+
 /* Classes do Header*/
 
 /* Exemplo de Header não autenticado

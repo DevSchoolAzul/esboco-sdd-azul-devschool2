@@ -7,12 +7,14 @@
   --blue: #0066FF;
   --blue-dark: #005CE6;
   --blue-darker: #0052cf;
+  --orange-light: #ffa319;
   --orange: #FF9900;
   --orange-darker: #E68A00;
   --red: #C52A19;
   --red-dark: #B12516;
   --red-darker: #9F2113;
   --gray-lighter: #E3E3E3;
+  --gray-light: #e8e8e8;
   --gray: #7D7C83;
   --gray-darker: #646369;
   
@@ -79,6 +81,10 @@ ul {
     border:  2px solid var(--blue-dark)
 }
 
+.btn-confirm:active {
+    background: var(--blue-darker);
+}
+
 /* classes dos botões de cancelamento */
 .btn-cancel {
     background: var(--white);
@@ -89,6 +95,11 @@ ul {
 .btn-cancel:hover {
     background: var(--gray-lighter);
     border:  2px solid var(--gray-lighter) 
+}
+
+.btn-cancel:active {
+    background: var(--gray-light);
+    border: 2px solid var(--gray-light);
 }
 
 /* Botão de fechamento */
@@ -113,6 +124,10 @@ ul {
     color: var(--white);
 }
 
+.btn-close:active {
+    background: var(--red-darker);
+}
+
 /* Botão de cadastro */
 /*
 simbolo de arquivo com +:
@@ -125,6 +140,11 @@ simbolo de arquivo com +:
 
 .btn-create:hover {
     background: var(--blue-dark);
+}
+
+.btn-create:active {
+    background: var(--blue-darker);
+    border:  2px solid var(--blue-darker);
 }
 
 /* Classes do Header*/

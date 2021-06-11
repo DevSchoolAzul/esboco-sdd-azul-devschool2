@@ -20,17 +20,42 @@
       href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css"
     />
   </head>
-  <body id="page-login">
+  <body>
     <div id="container">
       <header class="header-box">
         <div class="logo-box">
           <img src="public/mobicare-akross-logo.svg" />
         </div>
-        <div class="profile-box">
-          Fulano de Tal
-          <a href="index.html"><span class="lnr lnr-exit"></span></a>
-        </div>
       </header>
+    </div>
+    <div class="auth">
+      <div class="auth-box">
+        <h1>Login</h1>
+        <div class="form-group">
+          <label for="email">Email: </label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="example@gmail.com"
+          />
+        </div>
+        <div class="form-group">
+          <label for="senha">Senha: </label>
+          <input
+            type="password"
+            name="senha"
+            id="senha"
+            placeholder="********"
+          />
+        </div>
+        <a href="/recover.html">Esqueceu a senha?</a>
+        <div class="btn-group">
+          <button type="submit" class="btn btn-confirm btn-double">
+            Entrar
+          </button>
+        </div>
+      </div>
     </div>
   </body>
 </html>

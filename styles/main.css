@@ -136,7 +136,7 @@ ul {
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
 }
 
-.auth a {
+.auth a.forgot {
   color: var(--black-lighter);
   font-size: 0.925rem;
   font-weight: 500;
@@ -145,7 +145,7 @@ ul {
   cursor: pointer;
 }
 
-.auth a:hover {
+.auth a.forgot:hover {
   border-bottom: solid 1px var(--black-lighter);
   text-underline-offset: 2px;
 }

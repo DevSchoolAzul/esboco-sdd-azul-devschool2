@@ -127,7 +127,7 @@ ul {
     border-radius: 4px;
     border: 0;
 
-    background: var(--white-darker);
+    float: right;
 
     font-size: 1rem;
     font-weight: 700;
@@ -143,6 +143,10 @@ ul {
 
 .btn-close:active {
     background: var(--red-darker);
+}
+
+.btn-close span {
+    font-weight: bold;
 }
 
 /* Botão de cadastro */

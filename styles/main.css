@@ -340,7 +340,7 @@ input:focus::placeholder {
   box-shadow: 0 0 3.75rem rgba(51, 51, 51, 0.05);
 }
 
-/* Classes do modal*/
+/* Classes do breadcrumb*/
 /*
 <ul class="bd-group">
   <li><a href="projetos">Projetos</a></li>
@@ -354,8 +354,9 @@ input:focus::placeholder {
 }
 
 .bd-group li {
-    display: inline;
+    display: inline-block;
     font-size: 1.2rem;
+    position: relative;
 }
 
 .bd-group li+li:before {
@@ -363,20 +364,32 @@ input:focus::placeholder {
     color: var(--black-lighter);
     content: "/\00a0";
 }
-  
+
 .bd-group li a {
+    position: relative;
     color: var(--blue);
-    transition: 0.3s;
+    font-weight: 700;
+    transition: .3s;
 }
 
 .bd-group li a:hover {
-    color: var(--blue-darker);
-    text-decoration: underline;
-    text-decoration-thickness: .125rem;
-    text-underline-offset: 0.2em;
+    color: var(--blue-dark);
 }
 
-.bd-group li a:active {
-    color: var(--blue);
+.bd-group li a:after{
+    content: '';
+    position: absolute;
+    width: 0; 
+    height: .125rem;
+    display: block;
+    margin-top: .2em;
+    right: 0;
+    background: var(--blue);
+    transition: .3s;
 }
 
+.bd-group li a:hover:after{
+    width: 100%;
+    left: 0;
+    background: var(--blue-dark);
+}

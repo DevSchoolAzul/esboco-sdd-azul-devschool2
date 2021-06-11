@@ -35,7 +35,8 @@ font-family: 'Source Sans Pro', sans-serif; */
 body {
     -webkit-font-smoothing: antialiased;
     background: var(--white);
-    background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(241,241,241,1) 100%);
+    background: linear-gradient(0deg, rgba(241,241,241,1) 0%, rgba(255,255,255,1) 100%);
+    min-height: 100vh;
     
     /* Exemplo de uso de variavel de cor */
     /* backgroud: var(--white) */
@@ -179,7 +180,7 @@ simbolo de arquivo com +:
         <img src="public/mobicare-akross-logo.svg">
       </div>
       <div class="profile-box">
-        <strong>Fulano de Tal</strong>
+        Fulano de Tal
         <a href="index.html"><span class="lnr lnr-exit"></span></a>
       </div>
 </header>
@@ -208,6 +209,8 @@ simbolo de arquivo com +:
 .header-box .profile-box {
     display: flex;
     align-items: center;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
 .header-box .profile-box a {

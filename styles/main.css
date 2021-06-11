@@ -58,6 +58,10 @@ ul {
     list-style: none;
 }
 
+::selection, ::-moz-selection {
+    background: var(--blue-lighter);
+}
+
 /* Classe dos botões */
 
 /* div de alinhar botões */
@@ -270,8 +274,8 @@ simbolo de arquivo com +:
 }
 
 .form-group label {
-    font: 700 0.875rem 'Inter', sans-serif;
-    margin-bottom: 0.8rem;
+    font: 600 0.875rem 'Inter', sans-serif;
+    margin-bottom: 0.2rem;
 }
 
 .form-group input {

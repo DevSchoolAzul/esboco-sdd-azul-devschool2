@@ -58,7 +58,11 @@ ul {
     list-style: none;
 }
 
-*::selection, *::-moz-selection {
+::selection{
+    background: var(--blue-lighter);
+}
+
+::-moz-selection {
     background: var(--blue-lighter);
 }
 

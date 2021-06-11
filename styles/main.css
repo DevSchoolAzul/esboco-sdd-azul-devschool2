@@ -324,3 +324,44 @@ input:focus::placeholder {
   /* black-lighter */
   box-shadow: 0 0 3.75rem rgba(51, 51, 51, 0.05);
 }
+
+/* Classes do modal*/
+/*
+<ul class="bd-group">
+  <li><a href="projetos">Projetos</a></li>
+  <li><a href="versoes">Versões</a></li>
+  <li><a href="telas">Telas</a></li>
+</ul>
+*/
+
+.bd-group {
+    padding: 10px 16px;
+}
+
+.bd-group li {
+    display: inline;
+    font-size: 1.2rem;
+}
+
+.bd-group li+li:before {
+    padding: 0.375;
+    color: var(--black-lighter);
+    content: "/\00a0";
+}
+  
+.bd-group li a {
+    color: var(--blue);
+    transition: 0.3s;
+}
+
+.bd-group li a:hover {
+    color: var(--blue-darker);
+    text-decoration: underline;
+    text-decoration-thickness: .125rem;
+    text-underline-offset: 0.2em;
+}
+
+.bd-group li a:active {
+    color: var(--blue);
+}
+

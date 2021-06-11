@@ -148,7 +148,7 @@ ul {
 /* Botão de cadastro */
 /*
 simbolo de arquivo com +:
-<button class="btn btn-create"><span class="lnr lnr-file-add"></span> Cadastro</button>
+<button class="btn btn-create"><span class="lnr lnr-file-add"></span>Cadastro</button>
 */
 .btn-create {
     background: var(--blue);
@@ -165,6 +165,10 @@ simbolo de arquivo com +:
 .btn-create:active {
     background: var(--blue-darker);
     border:  2px solid var(--blue-darker);
+}
+
+.btn-create span {
+    margin-right: 5px;
 }
 
 /* Classes do Header */

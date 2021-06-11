@@ -153,10 +153,13 @@ simbolo de arquivo com +:
 .btn-create {
     background: var(--blue);
     color: var(--white);
+    border:  2px solid var(--blue);
 }
 
 .btn-create:hover {
     background: var(--blue-dark);
+    border:  2px solid var(--blue-dark);
+
 }
 
 .btn-create:active {

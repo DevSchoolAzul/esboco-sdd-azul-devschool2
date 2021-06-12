@@ -197,19 +197,35 @@ ul {
 
 /* classe dos botões de confirmação */
 .btn-confirm {
-  background: var(--blue);
-  color: var(--white);
-  border: 2px solid var(--blue);
-}
+    background: var(--blue);
+    color: var(--white);
+    border: 2px solid var(--blue);
+  }
+  
+  .btn-confirm:hover {
+    background: var(--blue-dark);
+    border: 2px solid var(--blue-dark);
+  }
+  
+  .btn-confirm:active {
+    background: var(--blue-darker);
+  }
 
-.btn-confirm:hover {
-  background: var(--blue-dark);
-  border: 2px solid var(--blue-dark);
-}
-
-.btn-confirm:active {
-  background: var(--blue-darker);
-}
+/* classe dos botões de confirmação */
+.btn-exclusion {
+    background: var(--red-dark);
+    color: var(--white);
+    border: 2px solid var(--red-dark);
+  }
+  
+  .btn-exclusion:hover {
+    background: var(--red-darker);
+    border: 2px solid var(--red-darker);
+  }
+  
+  .btn-exclusion:active {
+    background: var(--red-darker);
+  }
 
 /* classes dos botões de cancelamento */
 .btn-cancel {

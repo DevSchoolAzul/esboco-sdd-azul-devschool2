@@ -184,6 +184,12 @@ ul {
   justify-content: center;
 }
 
+.btn-group-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
 /* classe padrão dos botões */
 .btn {
   min-width: 8rem;
@@ -706,6 +712,15 @@ input:focus::placeholder {
   /* black-lighter */
   box-shadow: 0 0 3.75rem rgba(51, 51, 51, 0.05);
 }
+
+.modal-box h3 {
+  font: 700 1em "Inter", sans-serif;
+}
+
+.modal-box p {
+  margin: 2rem 0;
+}
+
 
 /*
  ######                                                                 

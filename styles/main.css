@@ -1054,3 +1054,7 @@ input:focus::placeholder {
 .box a.project:hover {
   color: var(--blue-darker);
 }
+
+.screen table, tr, th, td {
+  border: 1px solid black;
+}

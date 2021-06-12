@@ -1055,6 +1055,52 @@ input:focus::placeholder {
   color: var(--blue-darker);
 }
 
+.details {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+.info {
+  display: flex;
+  grid-gap: 1rem;
+}
+
+.info a {
+  color: var(--blue);
+  transform: 0.3s;
+}
+
+.info a:hover {
+  border-bottom: 1px solid var(--blue-dark);
+  color: var(--blue-dark);
+}
+
+.info a:visited {
+  color: var(--blue);
+}
+
+.screen-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  grid-gap: 1rem;
+}
+
+.screen-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.screen-info-items {
+  display: flex;
+  justify-content: space-between;
+}
+
 .screen table, tr, th, td {
   border: 1px solid black;
+}
+
+.screen table caption {
+  font-weight: 700;
 }

@@ -525,6 +525,16 @@ input:focus::placeholder {
   border: 2px solid var(--blue);
 }
 
+.form-group.upload {
+    align-items: center;
+}
+
+.form-group input.upload {
+    width: fit-content;
+    background-color: transparent;
+    padding: 0.5rem 0.5rem 0;;
+}
+
 /* 
   #####                                     
  #     # ######   ##   #####   ####  #    # 

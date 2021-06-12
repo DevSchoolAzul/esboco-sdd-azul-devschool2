@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#C4C4C4" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+
+    <title>Login</title>
+
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/pages/page-login.css" />
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css" />
+</head>
+
+<body id="page-login">
+    <div id="container">
+        <header class="header-box">
+            <div class="logo-box">
+                <img src="public/mobicare-akross-logo.svg" />
+            </div>
+            <div class="profile-box">
+                Fulano de Tal
+                <a href="index.html"><span class="lnr lnr-exit"></span></a>
+            </div>
+        </header>
+    </div>
+    <div class="overlay">
+        <div class="modal-box">
+            <button class="btn-close"><span class="lnr lnr-cross"></span></button>
+            <h1>Cadastrar nova tela</h1>
+            <div class="form-col">
+                <div class="form-row">
+                    <form class="form-col">
+                        <div class="form-group">
+                            <label for="project">Projeto:</label>
+                            <select class="input-drop" name="project" id="project">
+                                <option value="">---</option>
+                                <option value="1">Ativo</option>
+                                <option value="2">Inativo</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Nome da tela:</label>
+                            <input type="text" id="name" />
+                        </div>
+                        <div class="form-group">
+                            <label for="parent">Tela pai:</label>
+                            <input type="text" id="parent" />
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Data de lançamento:</label>
+                            <input type="date" id="date" />
+                        </div>
+                    </form>
+                    <form class="form-col">
+                        <div class="form-group">
+                            <label for="version">Número da versão:</label>
+                            <select class="input-drop" name="clone" id="version">
+                                <option value="">---</option>
+                                <option value="1">Ativo</option>
+                                <option value="2">Inativo</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="status">Estado:</label>
+                            <select class="input-drop" name="status" id="status">
+                                <option value="">---</option>
+                                <option value="1">Ativo</option>
+                                <option value="2">Inativo</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="hierarchy">Ordem na hierarquia:</label>
+                            <input type="text" id="hierarchy" />
+                        </div>
+                        <div class="form-group">
+                            <label for="log">URL Log:</label>
+                            <input type="text" id="log" />
+                        </div>
+                    </form>
+                </div>
+                <div class="form-group upload">
+                    <input type="file" class="upload" />
+                </div>
+                <div class="btn-group">
+                    <a href="index.html"><button class="btn btn-cancel">Cancelar</button></a>
+                    <a href="index.html"><button class="btn btn-confirm">Cadastrar</button><a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

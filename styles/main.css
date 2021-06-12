@@ -39,6 +39,10 @@ body {
   );
   min-height: 100vh;
 
+     background: radial-gradient(ellipse at top right, rgba(0,120,212,.6), transparent 60%), 
+                radial-gradient(ellipse at bottom right, rgba(1,164,1,.6) 0%, transparent 50%), 
+                radial-gradient(circle at left, rgba(249,97,0,.7) 0%, rgba(255,255,255,1) 50%);
+
   /* Exemplo de uso de variavel de cor */
   /* backgroud: var(--white) */
 }
@@ -237,23 +241,26 @@ simbolo de arquivo com +:
 }
 
 /* Botões de editar e excluir */
-.btn-manage {
-  margin: 10px;
-}
+/* 
+  <div class="btn-manage">
+  <span class="lnr lnr-pencil"></span>
+  <span class="lnr lnr-trash"></span>
+  </div>
+*/
 
-.btn-manage span {
+.btn-manage {
   cursor: pointer;
   font-size: 1.3rem;
   transition: color 0.3s;
 }
 
-.btn-manage span:hover {
+.btn-manage:hover {
   color: var(--blue);
   font-weight: 700;
 }
 
-.btn-manage span:first-of-type {
-  margin-right: 1rem;
+.btn-manage:first-of-type {
+  margin-right: 0.5rem;
 }
 
 /* 
@@ -689,17 +696,28 @@ input:focus::placeholder {
 .table {
   display: flex;
   flex-direction: column;
-  background-color: var(--blue);
   width: 60%;
   border-radius: 15px 15px 5px 5px;
   overflow: hidden;
+  background-color: rgba( 227, 227, 227, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 3.5px );
+  -webkit-backdrop-filter: blur( 3.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .title-bar {
   display: flex;
   flex-direction: column;
-  background-color: var(--gray-light);
   padding: 0.6rem 0.8rem;
+  background: rgba( 227, 227, 227, 0.4 );
+}
+
+.title-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /*
@@ -712,19 +730,89 @@ input:focus::placeholder {
     #    # ###### #    #    ###### #  ####    #   #    # 
 */
 
+/*
+<table class="list">
+  <thead class="list-header">
+    <tr>
+    <th></th>
+    </tr>
+  </thead>
+  <tbody class="list-body">
+    <tr>
+      <td></td>
+      <td>
+        <span class="lnr lnr-pencil btn-manage"></span>
+        <span class="lnr lnr-trash btn-manage"></span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+*/
+
+.list {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.list-header th {
+  text-align: left;
+  color: var(--white-darker);
+  background-color: rgba( 100, 99, 105, 0.5 );
+  font-size: 1rem;
+  padding: 0.375rem 0.938rem;
+}
+
+
+
+.list-body tr:nth-of-type(odd) {
+  background: rgba( 241, 241, 241, 0.5 );
+}
+
+.list-body tr:nth-of-type(even) {
+  background: rgba( 255, 255, 255, 0.5 );
+}
+
+.list-body td {
+  height: 57px;
+  padding: 6px 15px;
+  color: var(--black-lighter);
+  font-size: 1rem;
+}
+
+list .list-body td div {
+  display: flex;
+  align-items: center;
+}
+
+/*
 .list {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   background-color: var(--white-darker);
 }
 
-.listing {
+.list-item {
+  flex-grow: 1;
+  width: 100%;
+
+  overflow: hidden;
+  list-style: none;
+
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
   margin: 0 1rem;
   padding: 0.5rem 0.8rem;
-  font-size: 1.5em;
+}
+
+.listing-header {
+  font-size: 1rem;
+}
+
+.listing {
+  font-size: 0.875rem;
 }
 
 .listing:nth-of-type(odd) {
@@ -743,10 +831,11 @@ input:focus::placeholder {
   margin-bottom: 0.8rem;
 }
 
-.listing p {
+.listing p:first-of-type {
     display: flex;
     align-items: center;
 }
+*/
 
 /*
  #     #                                           

@@ -1097,8 +1097,18 @@ input:focus::placeholder {
   justify-content: space-between;
 }
 
-.screen table, tr, th, td {
+.screen table {
+  border: none;
+  background: rgba( 227, 227, 227, 0.4 );
+  border-collapse: collapse;
+}
+
+.screen tr, .screen th, .screen td {
   border: 1px solid black;
+}
+
+.screen td {
+  padding: 0.2rem;
 }
 
 .screen table caption {

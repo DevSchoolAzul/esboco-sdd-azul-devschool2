@@ -233,6 +233,10 @@ ul {
 <button class="btn-close"><span class="lnr lnr-cross"></span></button>
 */
 .btn-close {
+position: absolute;
+top: 1rem;
+right: 1rem;
+
   width: 2rem;
   height: 2rem;
   border-radius: 4px;
@@ -648,6 +652,7 @@ input:focus::placeholder {
 }
 
 .modal-box {
+    position: relative;
   background: var(--white-darker);
   min-width: 30rem;
   padding: 1rem 1rem;

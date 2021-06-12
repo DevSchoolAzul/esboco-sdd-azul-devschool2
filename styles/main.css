@@ -326,7 +326,6 @@ simbolo de arquivo com +:
 */
 
 .btn-manage {
-  cursor: pointer;
   font-size: 1.3rem;
   transition: color 0.3s;
 }
@@ -336,8 +335,14 @@ simbolo de arquivo com +:
   font-weight: 700;
 }
 
-.btn-manage:first-of-type {
-  margin-right: 0.5rem;
+.box .btn-manage {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.box span {
+  padding: 0.5rem;
 }
 
 /* 
@@ -897,7 +902,7 @@ input:focus::placeholder {
   align-items: center;
 }
 
-.list-body td a {
+.list-body td a, .btn-manage a, .list-body td a:visited, .btn-manage a:visited {
   color: var(--black-lighter);
 }
 
@@ -971,7 +976,7 @@ input:focus::placeholder {
 
   grid-gap: 2rem;
   padding: 1rem 1rem 1rem;
-  justify-content: space-between;
+  justify-content: space-evenly;
   pointer-events: none;
 }
 
@@ -1002,11 +1007,19 @@ input:focus::placeholder {
   font-size: 1.5em;
 }
 
-.box p {
+.box a.project, .box a.project:visited {
   display: flex;
-  font-size: 1rem;
-  font-weight: 600;
+  justify-content: center;
+  width: 100%;
+  color: var(--black);
+  font-size: 1.5rem;
+  font-weight: 500;
   flex-grow: 1;
   align-items: center;
   text-align: center;
+  transition: .3s;
+}
+
+.box a.project:hover {
+  color: var(--blue-darker);
 }

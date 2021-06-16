@@ -11,6 +11,8 @@ A estrutura de pastas do projeto sera dada da seguinte forma:
 ## Links uteis
 
 [Trello](https://trello.com/b/o2KRPRKJ/kanban-azul)
+
 [Figma](https://www.figma.com/file/A83ps2MKq5g8T4MDCTkd6p/Sistema-de-Documenta%C3%A7%C3%A3o?node-id=0%3A1)
-[Page](https://thalesmacena.github.io/esboco-sdd-azul-devschool2/)
+
+[Page](https://devschoolazul.github.io/esboco-sdd-azul-devschool2/)
 
